@@ -1,0 +1,11 @@
+name: titanic
+channels:
+  - conda-forge
+  - anaconda-fusion
+  - defaults
+dependencies:
+  - python=3.7
+  - numpy=1.15.1
+  - matplotlib=2.2.3
+  - pandas=0.23.4
+  - scikit-learn=0.19.2
