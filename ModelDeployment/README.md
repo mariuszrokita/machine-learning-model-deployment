@@ -36,3 +36,21 @@ The response result should look more or less like this one:
   }
 ]
 ```
+
+## Deployment to Azure Kubernetes cluster
+
+This set of instructions is inspired by [Ben Coleman](https://azurecitadel.com/cloud-native/kubernetes/).
+
+**Important!** If using an existing subscription you will need rights to create a service principal in the Azure AD tenant you use. Otherwise you will get the **Directory permission is needed for the current user to register the application** error message and will not be able to proceed.
+
+First, run the following command to sign in to the Azure Portal:
+
+```shell
+az login
+```
+
+Then, execute deployment script:
+
+```shell
+sh ./deploy-to-azure-aks.sh
+```
