@@ -4,7 +4,9 @@ services:
   api:
     build: ./api
     image: titanic-passengers-api:latest
-    volumes:
-      - ./api:/app
+    # Temporarily commented out. 
+    # More info: https://stackoverflow.com/questions/41529489/dockerfile-cant-find-app-py
+    #volumes:
+    #  - ./api:/app
     ports:
       - 5000:80

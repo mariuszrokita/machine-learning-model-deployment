@@ -16,11 +16,22 @@ There you should see a simple *Welcome to Titanic Prediction API* message which 
 
 In order to make test inference execute following command:
 
+(Mac):
+
 ```shell
 curl -X POST -H "Content-Type: application/json" \
      -d '{ "Pclass": 2, "Sex": 1, "Age": 1, "Fare": 2, "Embarked": 1, "Title": 3, "IsAlone": 0 }' \
      http://localhost:5000/api/predict
 ```
+
+(Windows):
+
+```shell
+curl -X POST -H "Content-Type: application/json" ^
+	-d "{ \"Pclass\": 2, \"Sex\": 1, \"Age\": 1, \"Fare\": 2, \"Embarked\": 1, \"Title\": 3, \"IsAlone\": 0 }" ^
+	http://localhost:5000/api/predict
+```
+
 
 The response result should look more or less like this one:
 

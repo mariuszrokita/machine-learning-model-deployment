@@ -1,4 +1,4 @@
-FROM python:3-slim
+FROM python:3.6-slim
 RUN apt-get update -y
  
 # Copy the current directory contents into the container at /app
