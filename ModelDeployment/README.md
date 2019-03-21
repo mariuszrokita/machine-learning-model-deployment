@@ -28,10 +28,9 @@ curl -X POST -H "Content-Type: application/json" \
 
 ```shell
 curl -X POST -H "Content-Type: application/json" ^
-	-d "{ \"Pclass\": 2, \"Sex\": 1, \"Age\": 1, \"Fare\": 2, \"Embarked\": 1, \"Title\": 3, \"IsAlone\": 0 }" ^
-	http://localhost:5000/api/predict
+     -d "{ \"Pclass\": 2, \"Sex\": 1, \"Age\": 1, \"Fare\": 2, \"Embarked\": 1, \"Title\": 3, \"IsAlone\": 0 }" ^
+     http://localhost:5000/api/predict
 ```
-
 
 The response result should look more or less like this one:
 
